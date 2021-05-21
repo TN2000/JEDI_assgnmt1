@@ -1,1 +1,1 @@
-# JEDI_assgnmt1
+Software development Assignment for Flipkart JEDI Training

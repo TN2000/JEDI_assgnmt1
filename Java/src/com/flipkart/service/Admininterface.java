@@ -4,10 +4,11 @@
 package com.flipkart.service;
 
 /**
- * @author tribhav
+ * @author Aditya
  *
  */
-public interface Admininterface {
+public class Admininterface 
+{
 	
 	/**
 	 * Method to generate grade card of a Student 
@@ -15,7 +16,7 @@ public interface Admininterface {
 	 * throws StudentNotFoundException 
 	 */
 	
-	public void generateGradeCard(int Studentid) throws StudentNotFoundException;
+	public void generateGradeCard(int Studentid);
 	
 	/**
 	 * Method to approve a Student 
@@ -24,7 +25,7 @@ public interface Admininterface {
 	 * throws StudentNotFoundException 
 	 */
 	
-	public void verifyStudent(int studentid, List<Student> studentlist) throws StudentNotFoundException;
+	public void verifyStudent(int studentid, List<Student> studentlist);
 	
 	/**
 	 * Method to add Professor to DB
@@ -32,7 +33,7 @@ public interface Admininterface {
 	 * throws UserIdAlreadyInUseException 
 	 */
 	
-	public void addProfessor(Professor professor) throws UserIdAlreadyInUseException;
+	public void addProfessor(Professor professor);
 	
 	/**
 	 * Method to Remove Course from Course Catalog
@@ -41,7 +42,7 @@ public interface Admininterface {
 	 * throws CourseNotFoundException 
 	 */
 
-	public void removeCourse(String coursecode, List<Course> courselist) throws CourseNotFoundException;
+	public void removeCourse(String coursecode, List<Course> courselist);
 	
 	/**
 	 * Method to add Course to Course Catalog
@@ -50,5 +51,5 @@ public interface Admininterface {
 	 * throws CourseFoundException;
 	 */
 	
-	public void addCourse(Course course, List<Course> courselist) throws CourseFoundException;
+	public void addCourse(Course course, List<Course> courselist);
 }

@@ -26,7 +26,7 @@ public class Student extends User
 	/**
 	 * @param department the department to set
 	 */
-	public void setD(String department) 
+	public void setDepartment(String department) 
 	{
 		this.department = department;
 	}

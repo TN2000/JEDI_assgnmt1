@@ -12,34 +12,30 @@ public interface Admininterface
 	
 	/**
 	 * Method to generate grade card of a Student 
-	 * studentId
-	 * throws StudentNotFoundException 
+	 * studentid 
 	 */
 	
 	public void generateGradeCard(int Studentid);
 	
 	/**
 	 * Method to approve a Student 
-	 * studentId
-	 * studentList
-	 * throws StudentNotFoundException 
+	 * studentid
+	 * studentlist
 	 */
 	
 	public void verifyStudent(int studentid, List<Student> studentlist);
 	
 	/**
 	 * Method to add Professor to DB
-	 * professor : Professor Object storing details of a professor
-	 * throws UserIdAlreadyInUseException 
+	 * professor : Professor Object storing details of a professor 
 	 */
 	
 	public void addProfessor(Professor professor);
 	
 	/**
 	 * Method to Remove Course from Course Catalog
-	 * courseCode
-	 * courseList : Courses available in the catalog
-	 * throws CourseNotFoundException 
+	 * coursecode
+	 * courselist : Courses available in the catalog
 	 */
 
 	public void removeCourse(String coursecode, List<Course> courselist);
@@ -47,8 +43,7 @@ public interface Admininterface
 	/**
 	 * Method to add Course to Course Catalog
 	 * course : Course object storing details of a course
-	 * courseList : Courses available in the catalog
-	 * throws CourseFoundException;
+	 * courselist : Courses available in the catalog
 	 */
 	
 	public void addCourse(Course course, List<Course> courselist);

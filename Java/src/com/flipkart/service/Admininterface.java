@@ -7,7 +7,7 @@ package com.flipkart.service;
  * @author Aditya
  *
  */
-public class Admininterface 
+public interface Admininterface 
 {
 	
 	/**
